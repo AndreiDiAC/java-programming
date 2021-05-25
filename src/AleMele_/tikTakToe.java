@@ -18,9 +18,9 @@ public class tikTakToe {
         Scanner s = new Scanner(System.in);
         Random r = new Random();
         String [] arr = new String[2];
-        System.out.println("Enter first player:");
+        System.out.println("Enter first player name:");
         arr[0] = s.next();
-        System.out.println("Enter second player:");
+        System.out.println("Enter second player name:");
         arr[1] = s.next();
         int random = r.nextInt(arr.length);
         String player1; String player2;
@@ -53,8 +53,8 @@ public class tikTakToe {
 
 
         char [][] letterArr = new char[3][3];
-        System.out.println("   1   2   3  - column");
-        for (int i = 0, l = 1; i < letterArr.length;i++, l++){
+        System.out.println("   0   1   2  - column");
+        for (int i = 0, l = 0; i < letterArr.length;i++, l++){
             System.out.print(l + " |");
             for (int j = 0; j < letterArr[i].length;j++){
                 System.out.print(" "+letterArr[i][j] + " | ");
@@ -70,7 +70,7 @@ public class tikTakToe {
         System.out.println("Enter row number");
         int rowLet = s.nextInt();
 
-        letterArr[1][1] = 'x';
+        letterArr[colNum][rowLet] = 'x';
 
         System.out.println(Arrays.deepToString(letterArr));
         table();
@@ -155,5 +155,7 @@ public class tikTakToe {
         System.out.println("Player X => " + player1);
         System.out.println("Player 0 => " + player2);
     }
+
+
 
 }

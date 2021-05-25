@@ -3,49 +3,25 @@ package $$Methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class a {
+
     public static void main(String[] args) {
-        String [] password = {"one", "hi", "hold"};
-        ArrayList<String> newPass = new ArrayList<>();
-
-        for( String word : password){
-            String stars = "";
-            for ( int i = 0; i < word.length();i++){
-                stars += '*';
-            }
-            newPass.add(stars);
-        }
-        System.out.println(newPass);
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1,2,2,2,2,3,4,5,5));
+        ArrayList<Integer> num2 = new ArrayList<>(Arrays.asList(10,10,20));
 
 
 
 
+        System.out.println(nums);
 
+        nums.addAll(1,num2);
+        System.out.println(nums);
 
-
-        //STRING MANIPULATION
-//        String strPass = String.join(" ",password);
-//        for(int i = 0; i < strPass.length();i++){
-//            if(strPass.charAt(i) != ' '){
-//                strPass = strPass.replace(strPass.charAt(i), '*');
-//            }
-//        }
-//        String [] newPassword = strPass.split(" ");
-//
-//
-//
-//        System.out.println(Arrays.toString(newPassword));
-
+        Collections.addAll(nums,100000);
+        System.out.println(nums);
 
 
     }
-    public static String stars(String str){
-        String stars = "";
-        for( int i = 0; i < str.length(); i++){
-            stars += "*";
-        }
-        return stars;
-    }
-
 }
