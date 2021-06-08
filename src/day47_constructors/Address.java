@@ -1,6 +1,7 @@
 package day47_constructors;
 
 public class Address {
+    // instance variable
     private String street;
     private String city;
     private String state;
@@ -8,13 +9,12 @@ public class Address {
     private String country = "USA";
 
     //constructor
-    public Address(){
+    public Address(){   // for creating the object by default
         System.out.println("Address constructor");
         street = "123 unknown st";
         city = "Unknown";
         state = "Unknown";
         zipCode = "00000";
-
     }
 
     public Address(String street,String city,String state,String zipCode ){
@@ -97,6 +97,14 @@ class RealAddress{
 
         Address newAddress3 = new Address("123 BOO str","Chicago","Il","43621");
         System.out.println("newAddress3 = " + newAddress3);
+        System.out.println(newAddress3.getCity());
+
+
+        Address ourAddress = new Address();
+        System.out.println(ourAddress.getCity());
+        ourAddress.setCity("Texax");
+        System.out.println(ourAddress.getCity());
+
 
 
 
