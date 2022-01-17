@@ -24,10 +24,10 @@ public class StringUtilTest {
         isNullOrEmpty("");   // we can call this method without classname because we imported class on the top
 
 
-        System.out.println(reverse("java"));
-        String word = reverse("python");
-        String reverse = StringsUtils.reverse(word);
-        System.out.println("reverse = " + reverse);
+//        System.out.println(reverse("java"));
+//        String word = reverse("python");
+//        String reverse = StringsUtils.reverse(word);
+//        System.out.println("reverse = " + reverse);
 
     }
 }

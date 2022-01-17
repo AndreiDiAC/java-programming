@@ -12,24 +12,25 @@ public class ReverseEachWordSaim {
 
 
         public static void main(String[] args) {
-            System.out.println(reverseEachWord("It started to snow in Chicago"));
+
+//            System.out.println(reverseEachWord("It started to snow in Chicago"));
         }
 
 
 
 
-        public static String reverseEachWord(String str) {
-
-            String reverse = "";
-
-            for (String each : str.split(" ")) {
-
-                reverse += StringsUtils.reverse(each) + " ";
-
-            }
-
-            return reverse.trim();
-
-        }
+//        public static String reverseEachWord(String str) {
+//
+//            String reverse = "";
+//
+//            for (String each : str.split(" ")) {
+//
+//                reverse += StringsUtils.reverse(each) + " ";
+//
+//            }
+//
+//            return reverse.trim();
+//
+//        }
 
 }

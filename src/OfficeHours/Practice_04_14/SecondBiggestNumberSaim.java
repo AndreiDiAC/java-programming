@@ -13,7 +13,7 @@ public class SecondBiggestNumberSaim {
                 max = eachNum;    //max 9
             }
 
-            if(eachNum > secondMax && eachNum <max){
+            if(eachNum > secondMax && eachNum < max){
                 secondMax = eachNum;
             }
 

@@ -15,5 +15,9 @@ public class JavaCityCase {
             System.out.println("Day " + day + " | total cases: " + totalCases + LocalDate.now().getDayOfWeek());
         }
         System.out.println("totalCases = " + totalCases);
+
+
     }
+
+
 }

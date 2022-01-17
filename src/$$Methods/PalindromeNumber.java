@@ -2,7 +2,7 @@ package $$Methods;
 
 public class PalindromeNumber {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(1234));
+        System.out.println(isPalindrome(1221));
 
     }
     public static boolean isPalindrome(int num){

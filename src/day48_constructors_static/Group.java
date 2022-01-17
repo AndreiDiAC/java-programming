@@ -8,13 +8,17 @@ public class Group {
     private List<String> members;
 
 
+
     public Group(String name){
         this.name = name;
         members = new ArrayList<>();
     }
 
+
+
     public void addMember(String newMember){
         members.add(newMember);
+
     }
 
     public void removeMember(String newMember){

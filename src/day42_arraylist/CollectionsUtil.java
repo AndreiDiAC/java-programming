@@ -50,5 +50,15 @@ public class CollectionsUtil {
 
 
 
+
+
+
+        List<String> name = new ArrayList<>(Arrays.asList("David", "Ana"));
+        System.out.println(name);
+
+
+
+
+
     }
 }

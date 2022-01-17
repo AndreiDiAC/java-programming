@@ -10,7 +10,7 @@ public class AnimalObjects {
         Cat cat = new Cat();
         cat.speak();
 
-        Dog dog = new Dog();
-        dog.speak();
+//        Dog dog = new Dog();
+//        dog.speak();
     }
 }
